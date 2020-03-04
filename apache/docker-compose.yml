@@ -2,7 +2,9 @@
 services:
   apache:
     hostname: $HOSTNAME
-    image: "httpd:alpine"
+    build: 
+      context: .
+      dockerfile: Dockerfile
     restart: always
     ports:
       - "80:80"
