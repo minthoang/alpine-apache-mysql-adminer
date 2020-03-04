@@ -1,2 +1,2 @@
-FROM httpd:alpine
+FROM "httpd:alpine"
 RUN apk add vim
